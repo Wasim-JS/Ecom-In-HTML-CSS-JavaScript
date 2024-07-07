@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecom</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script type="module" src="./scripts/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/">LOGO</a>
+      </div>
+
+      <nav>
+        <li class="active"><a style="color: red;" href="/">Home</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/cart.html">Cart <span id="cartLen"></span></a></li>
+      </nav>
+    </header>
+
+    <main>
+        <div>
+
+            <h1>
+                Check Out The Latest Trends
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, omnis.</p>
+        </div>
+    </main>
+
+    <section class="cat">
+      <h1>Categories</h1>
+
+      <div class="prod">
+        <div>
+          <a href="">
+            <img
+              src="https://i5.walmartimages.com/asr/c3772a4f-d7be-43d2-8357-754f5ba48fe4.7240fbd58008a3afd0c469a005761e11.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff"
+              alt=""
+            />
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img
+              src="https://i5.walmartimages.com/asr/230e0b37-c268-4422-b97b-862af8aa07a9_1.f5176b54b26f19baeb4d4fa9add024d1.jpeg"
+              alt=""
+            />
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img
+              src="https://www.sathya.store/img/product/BejcLU9Fbj9LyVH8.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img
+              src="https://www.bhphotovideo.com/images/images2500x2500/beats_by_dr_dre_900_00108_01_studio_wireless_headphones_white_1016366.jpg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <h3 class="products_header">Products</h3>
+    <section class="carts"></section>
+
+    <footer>
+        All rights reserved
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- cart template -->
+    <template id="cartsTemp">
+      <div class="cart">
+        <img src="" alt="" />
+        <div class="price">
+          <div><span>Price: RS</span> <span></span> /-</div>
+          <div>RS <span></span>/-</div>
+        </div>
+        <div class="stars"></div>
+
+        <div class="add">
+          <button>Add To Cart</button>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>

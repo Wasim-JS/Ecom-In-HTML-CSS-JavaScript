@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <script type="module" src="./scripts/cart.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="/">LOGO</a>
+          </div>
+  
+        <nav>
+          <li><a href="/">Home</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a style="color: red;" href="/cart.html">Cart <span id="cartLen"></span></a></li>
+        </nav>
+      </header>
+
+      <section class="cartItems">
+       
+      </section>
+
+      <div class="bill">
+
+        <p><span>SubTotal: </span> <span>0</span></p>
+        <p><span>Delivery Price: </span> <span>0</span></p>
+        <p><span>Total: </span> <span>0</span></p>
+
+      </div>
+
+
+      
+    <footer>
+        All rights reserved
+    </footer>
+
+
+
+     <template id="cartTemp">
+        <div class="cartPro">
+            <div class="cartImg">
+                <img src="https://cdna.lystit.com/photos/dickssportinggoods/096530db/columbia-MudSanguine-Redmond-Leather-Omni-tech-Waterproof-Hiking-Shoes.jpeg" alt="">
+            </div>
+
+            <div class="cartPrice">
+                    <span>RS </span> <span>2000</span>
+            </div>
+
+            <div id="btns">
+                <button class="add">+</button>
+                <p>1</p>
+                <button class="rem">-</button>
+            </div>
+
+            <div class="remove">
+                     <button>X</button>
+            </div>
+           
+        </div>
+     </template>
+    
+</body>
+</html>

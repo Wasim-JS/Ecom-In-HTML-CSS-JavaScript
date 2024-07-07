@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.con{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.con .form{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+
+
+}
+.con .form div{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+
+}
+.con .form div label{
+margin-top: 10px;
+margin-bottom: 5px;
+
+
+}
+.con .form div input,textarea{
+   padding: 13px;
+   border: none;
+   border-radius: 10px;
+   background-color: transparent;
+   border-bottom: 2px solid black;
+
+
+}
+.con .form div textarea{
+    border: 1px solid black;
+}
+.con .form div input::placeholder{
+   font-style: oblique;
+
+
+}
+
+.con .map{
+    flex:1;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+.con .map >iframe{
+   width: 95%;
+}
+
+
+@media screen and (max-width:1000px){
+
+    .con{
+       flex-direction: column;
+    }
+
+    .con .form{
+        margin-top: 30px;
+    }
+    
+}

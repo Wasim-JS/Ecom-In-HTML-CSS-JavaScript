@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: linear-gradient(217deg, white 20%, rgba(171, 85, 16, 0.568));
+
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+}
+
+button{
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+button:active{
+    transform: scale(0.9);
+}
+
+header{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(30, 29, 29);
+    color: #fff;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+header div.logo a{
+    color: #fff;
+}
+
+header nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style-type: none;
+    flex-shrink: 0;
+    
+}
+header nav li a{
+    
+    color: #fff;
+}
+
+main{
+    height: 80vh;
+    /* background-color: red; */
+    background-image:linear-gradient(187deg, rgba(159, 149, 149, 0.8), rgba(238, 233, 233, 0) 40.71%),url('https://wallpapercave.com/wp/wp1877588.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    mask-image: linear-gradient( 180deg, rgb(191, 149, 149) 5%, transparent 95%);
+    position: relative;
+}
+
+main div{
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+main div h1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section.cat h1{
+    padding: 20px;
+
+}
+section.cat .prod{
+    display: grid;
+    /* grid-template-columns: repeat(4,1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr) );
+    gap: 40px;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    
+}
+.products_header{
+    padding: 20px;
+}
+section.cat .prod div{
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+    background-color: #fff;
+}
+section.cat .prod div a img{
+   width: 100%;
+    
+}
+
+section.carts{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+    gap: 20px;
+}
+
+section.carts .cart{
+    background-color: rgb(239, 239, 233);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+
+section.carts .cart img{
+    width: 80%;
+    mix-blend-mode:multiply;
+    align-self: center;
+    height: 200px;
+    object-fit: contain;
+}
+section.carts .cart .price{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+section.carts .cart .stars i{
+   color: gold;
+   filter: drop-shadow(1px 1px 4px #111);
+   
+}
+section.carts .cart .price>div:nth-child(2)>span{
+    text-decoration: line-through;
+  
+}
+section.carts .cart .add button{
+    padding: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+
+}
+
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+header nav.active> li a{
+    color: crimson!important;
+}
+
+@media screen and (max-width:700px){
+    section.carts{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:400px){
+    section.carts{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
